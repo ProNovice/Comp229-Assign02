@@ -1,0 +1,84 @@
+﻿body {
+}
+
+
+
+.font-main-style {
+    font-family: Arial;
+    color: #dddddd;
+}
+
+.nav-top-font {
+    font-weight: bold;
+    font-size: 17px;
+    color: #555555;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*hero image*/
+.hero-image {
+    background-image: url(../Assets/hero_image.jpg);
+    /*source: http://getreelcinemas.com/chilton-cinema/*/
+    height: 820px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+}
+
+/*logo image in Home*/
+.home-logo {
+    height: 300px;
+}
+
+/*content in home*/
+.home-body {
+    font-size: 30px;
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
+.home-disclaimer {
+    font-size: 20px;
+    max-width: 500px;
+}
+
+/*setting for copyright*/
+.copyright {
+    text-align: center;
+    color: #555555;
+}
+
+/*setting about margin-top*/
+.margin-top-14px {
+    margin-top: 14px;
+}
+
+/*black background*/
+.background-black {
+    background-color:black;
+}
+
+/*container background color*/
+.container-background {
+    color: cccccc;
+    background-color: #222222;
+    min-height: 820px;
+    padding-top: 100px;
+}
+
+/*thanks message*/
+.thanks-message {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*thanks image*/
+.thanks-image {
+    height: 250px;
+    text-align: center;
+    margin: 100px;
+}
