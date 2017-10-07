@@ -213,6 +213,7 @@
     <Compile Include="Survey.aspx.designer.cs">
       <DependentUpon>Survey.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SurveyResult.cs" />
     <Compile Include="Thanks.aspx.cs">
       <DependentUpon>Thanks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

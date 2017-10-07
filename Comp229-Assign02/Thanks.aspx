@@ -5,6 +5,7 @@
             <p>Thank you for participating our survey!</p>
             <p>Have a nice day!</p>
             <img src="Assets/smiling_image.png" class="thanks-image" />
+            <p><a href="https://www.youtube.com/">Go to YouTube</a></p>
         </div>
     </div>
 </asp:Content>

@@ -1,7 +1,4 @@
-﻿body {
-}
-
-
+﻿
 
 .font-main-style {
     font-family: Arial;
@@ -55,6 +52,10 @@
     margin-top: 14px;
 }
 
+.padding-left-100px {
+    padding-left: 100px;
+}
+
 /*black background*/
 .background-black {
     background-color:black;
@@ -62,10 +63,22 @@
 
 /*container background color*/
 .container-background {
-    color: cccccc;
+    color: #cccccc;
     background-color: #222222;
     min-height: 820px;
     padding-top: 100px;
+}
+
+/*questions style*/
+.q-question {
+    font-size: 20px;
+
+}
+
+/*answers of questions style*/
+.qustion {
+    font-size: 20px;
+    padding: 100px;
 }
 
 /*thanks message*/
