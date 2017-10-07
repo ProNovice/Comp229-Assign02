@@ -4,14 +4,22 @@
         <%-- image source: http://getreelcinemas.com/chilton-cinema/ --%>
         <div class="row home-body">
             <div class="col-md-4">
-                <img class="home-logo" src="Assets/youtube_logo.png" />
+                <p>
+                    <img class="home-logo" src="Assets/logo_image_vertical_black_background.PNG" />
+                </p>
+                <p>
+                    <a href="www.youtube.com"><img class="home-logo" src="Assets/youtube_logo.png" /></a>
+                </p>
             </div>
             <div class="col-md-6">
                 <p>User Survey about using YouTube</p>
                 <p id="disclaimer" class="home-disclaimer" runat="server">
-                    We're conducting research on user experience of YouTube. We'd love to hear from you about watching and uploading videos, and advertisements in YouTube.
-                    This will help us make statistics of user experience of YouTube. The survey should only take 5 minutes, and your responses are completely anonymous.
-                    Questions marked with an asterisk (*) are required.
+                    We, <strong>User Survey</strong> is a question investigation agent.
+                    We are conducting research on user experience by order of YouTube.
+                    We'd love to hear from you about watching and uploading videos on YouTube.
+                    This will help us make statistics of user experience of YouTube.
+                    The survey should only take 5 minutes, and your responses are completely anonymous.
+                    All questions require answers.
                     If you have any questions about the survey, please email us: mchoi34@my.centennialcollege.ca
                     We really appreciate your input!
                 </p>

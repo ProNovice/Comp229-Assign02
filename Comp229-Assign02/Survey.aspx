@@ -12,6 +12,7 @@
                     </div>
                         <%-- show questions according to the selection --%>
                         <asp:RadioButtonList ID="rbYouTubeExperience" runat="server" AutoPostBack = "true" OnSelectedIndexChanged ="showQuestions2">
+                            <%-- To execute an event whenever the value is changed, AutoPostBack have to be true. --%>
                             <asp:ListItem Text="Yes" Value="yes" />
                             <asp:ListItem Text="No" Value="no" />
                         </asp:RadioButtonList>
@@ -70,7 +71,7 @@
                         <asp:ListItem Value="Movie">Movie</asp:ListItem>
                         <asp:ListItem Value="Drama">Drama</asp:ListItem>
                         <asp:ListItem Value="Comedy">Comedy</asp:ListItem>
-                        <asp:ListItem Value="Funny Video">Funny Video</asp:ListItem>
+                        <asp:ListItem Value="Funny Video">Funny video</asp:ListItem>
                         <asp:ListItem Value="Education">Education</asp:ListItem>
                         <asp:ListItem Value="Game">Game</asp:ListItem>
                         <asp:ListItem Value="Others">Others</asp:ListItem>
@@ -123,7 +124,7 @@
                         Q8. How much video did you upload?
                     </div>
                     <select id="sltNumberOfUploading" runat="server" multiple="false">
-                        <option>Never</option>
+                        <option>None</option>
                         <option>1-5</option>
                         <option>6-20</option>
                         <option>20-50</option>
@@ -158,7 +159,6 @@
                         Q11. How many views did you get on average?
                     </div>
                     <select id="sltNumberOfViewers" runat="server" multiple="false">
-                        <option>Never</option>
                         <option>less than 100</option>
                         <option>less than 1000</option>
                         <option>less than 10000</option>
@@ -168,10 +168,8 @@
                 </div>
                 <div id="q12" class="question" runat="server">
                     <div class="q-question">
-                        Q12. How often do you get recommendations
-                    </div>
+                        Q12. How many recommendations do you get on average?</div>
                     <select id="sltNumberOfRecommendations" runat="server" multiple="false">
-                        <option>Never</option>
                         <option>less than 100</option>
                         <option>less than 1000</option>
                         <option>less than 10000</option>

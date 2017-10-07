@@ -7,5 +7,9 @@
             <img src="Assets/smiling_image.png" class="thanks-image" />
             <p><a href="https://www.youtube.com/">Go to YouTube</a></p>
         </div>
+        <div id="txtResult" class="result" runat="server">
+            
+
+        </div>
     </div>
 </asp:Content>

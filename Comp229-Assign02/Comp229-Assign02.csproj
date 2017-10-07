@@ -129,6 +129,7 @@
   <ItemGroup>
     <Content Include="Assets\logo_image.PNG" />
     <Content Include="Assets\logo_image_black.png" />
+    <Content Include="Assets\logo_image_vertical_black_background.PNG" />
     <Content Include="Assets\logo_name_image.png" />
     <Content Include="Assets\hero_image.jpg" />
     <Content Include="Assets\smiling_image.png" />

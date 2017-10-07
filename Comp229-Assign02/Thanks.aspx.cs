@@ -11,7 +11,12 @@ namespace Comp229_Assign02
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ShowResult();
+        }
 
+        protected void ShowResult()
+        {
+            txtResult.InnerHtml = SurveyResult.GetSurveyResult();
         }
     }
 }
