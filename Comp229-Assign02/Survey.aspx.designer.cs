@@ -40,6 +40,15 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.RadioButtonList rbYouTubeExperience;
         
         /// <summary>
+        /// rfvYouTubeExperience control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvYouTubeExperience;
+        
+        /// <summary>
         /// q2_1 control.
         /// </summary>
         /// <remarks>
@@ -49,13 +58,13 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl q2_1;
         
         /// <summary>
-        /// sltAccessPrequency control.
+        /// sltAccessFrequency control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect sltAccessPrequency;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect sltAccessFrequency;
         
         /// <summary>
         /// q2_2 control.
@@ -76,6 +85,15 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.RadioButtonList rbHeardYouTube;
         
         /// <summary>
+        /// rfvHeardYouTube control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHeardYouTube;
+        
+        /// <summary>
         /// q3 control.
         /// </summary>
         /// <remarks>
@@ -92,6 +110,15 @@ namespace Comp229_Assign02 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList rbUsingOtherSite;
+        
+        /// <summary>
+        /// rfvUsingOtherSite control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUsingOtherSite;
         
         /// <summary>
         /// btnNext1 control.
@@ -157,13 +184,22 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl q6;
         
         /// <summary>
-        /// rbFrequencyEvaluation control.
+        /// rbEvaluatingFrequency control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbFrequencyEvaluation;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbEvaluatingFrequency;
+        
+        /// <summary>
+        /// rfvEvaluatingFrequency control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEvaluatingFrequency;
         
         /// <summary>
         /// q7 control.
@@ -175,13 +211,22 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl q7;
         
         /// <summary>
-        /// rbFrequencyComment control.
+        /// rbCommentingFrequency control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbFrequencyComment;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbCommentingFrequency;
+        
+        /// <summary>
+        /// rfvCommentingFrequency control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCommentingFrequency;
         
         /// <summary>
         /// btnNext2 control.
@@ -236,6 +281,15 @@ namespace Comp229_Assign02 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtUnploadingPurpose;
+        
+        /// <summary>
+        /// rfvUploadingPurpose control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUploadingPurpose;
         
         /// <summary>
         /// q10 control.
@@ -310,6 +364,15 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl numSubscribers;
         
         /// <summary>
+        /// rfvNumSubscribers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNumSubscribers;
+        
+        /// <summary>
         /// btnNext3 control.
         /// </summary>
         /// <remarks>
@@ -328,13 +391,22 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl aboutUserInformation;
         
         /// <summary>
-        /// email control.
+        /// inputEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl email;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inputEmail;
+        
+        /// <summary>
+        /// rfvUserEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUserEmail;
         
         /// <summary>
         /// txtYouTubeOpinion control.
@@ -355,12 +427,21 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.HtmlControls.HtmlTextArea txtSurveyOpinion;
         
         /// <summary>
-        /// btnFinish control.
+        /// submitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btnFinish;
+        protected global::System.Web.UI.WebControls.Button submitButton;
+        
+        /// <summary>
+        /// lbMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbMessage;
     }
 }

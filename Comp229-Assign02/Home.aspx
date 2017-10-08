@@ -7,17 +7,14 @@
                 <p>
                     <img class="home-logo" src="Assets/logo_image_vertical_black_background.PNG" />
                 </p>
-                <p>
-                    <a href="www.youtube.com"><img class="home-logo" src="Assets/youtube_logo.png" /></a>
-                </p>
             </div>
             <div class="col-md-6">
-                <p>User Survey about using YouTube</p>
+                <p>Survey about user experience of YouTube</p>
                 <p id="disclaimer" class="home-disclaimer" runat="server">
                     We, <strong>User Survey</strong> is a question investigation agent.
                     We are conducting research on user experience by order of YouTube.
                     We'd love to hear from you about watching and uploading videos on YouTube.
-                    This will help us make statistics of user experience of YouTube.
+                    This will help us make statistics to improve user experience of YouTube.
                     The survey should only take 5 minutes, and your responses are completely anonymous.
                     All questions require answers.
                     If you have any questions about the survey, please email us: mchoi34@my.centennialcollege.ca

@@ -1,21 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Survey.aspx.cs" Inherits="Comp229_Assign02.Survey" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container-background padding-left-100px">
-        <p><h1><strong>Take the Survey!</strong></h1></p>
-        <p>&nbsp;</p>
+        <h1><strong>Survey</strong></h1>
+        <p></p>
         <div>
             <%-- About Experience --%>
-            <div id="aboutExperience" runat="server">Experience of YouTube
+            <div id="aboutExperience" runat="server"><h3>Experience of YouTube</h3>
                 <div id="q1" class="question" runat="server">
                     <div class="q-question">
                         Q1. Have you used YouTube?
                     </div>
                         <%-- show questions according to the selection --%>
-                        <asp:RadioButtonList ID="rbYouTubeExperience" runat="server" AutoPostBack = "true" OnSelectedIndexChanged ="showQuestions2">
+                        <asp:RadioButtonList ID="rbYouTubeExperience" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ShowQuestion2">
                             <%-- To execute an event whenever the value is changed, AutoPostBack have to be true. --%>
                             <asp:ListItem Text="Yes" Value="yes" />
                             <asp:ListItem Text="No" Value="no" />
                         </asp:RadioButtonList>
+                    <%-- Required field validator for the question --%>
+                    <asp:RequiredFieldValidator id="rfvYouTubeExperience" runat="server" ControlToValidate="rbYouTubeExperience" ErrorMessage="Answer is required" ForeColor="Red" />
                 </div>
 
                 <%-- if 'Yes' was selected at the previous question --%>
@@ -24,8 +26,7 @@
                         Q2. How often do you access YouTube in a week?
                     </div>
                     <div class="q-answer">
-
-                        <select id="sltAccessPrequency" runat="server" multiple="false">
+                        <select id="sltAccessFrequency" runat="server" multiple="false">
                             <option>1-10</option>
                             <option>11-20</option>
                             <option>21-30</option>
@@ -44,16 +45,18 @@
                         <asp:ListItem Text="Yes" Value="yes" />
                         <asp:ListItem Text="No" Value="no" />
                     </asp:RadioButtonList>
+                    <asp:RequiredFieldValidator id="rfvHeardYouTube" runat="server" ControlToValidate="rbHeardYouTube" ErrorMessage="Answer is required" ForeColor="Red" />
                 </div>
 
                 <div id="q3" class="question" runat="server">
                     <div class="q-question">
-                        Q3. Do you use other video sites more than YouTube?
+                        Q3. Do you use other video websites more than YouTube?
                     </div>
                     <asp:RadioButtonList ID="rbUsingOtherSite" runat="server">
                         <asp:ListItem Text="Yes" Value="yes" />
                         <asp:ListItem Text="No" Value="no" />
                     </asp:RadioButtonList>
+                    <asp:RequiredFieldValidator id="rfvUsingOtherSite" runat="server" ControlToValidate="rbUsingOtherSite" ErrorMessage="Answer is required" ForeColor="Red" />
                 </div>
                 <%-- if it is yes, just go to Thanks page --%>
                 <button id="btnNext1" runat="server" onserverclick="nextButton1_click">Next</button>
@@ -62,7 +65,7 @@
 
 
             <%-- About preference --%>
-            <div id="aboutPreference" runat="server">Content Preference
+            <div id="aboutPreference" runat="server"><h3>Content Preference</h3>
                 <div id="q4" class="question" runat="server">
                     <div class="q-question">
                         Q4. What genres do you prefer?
@@ -93,31 +96,33 @@
                     <div class="q-question">
                         Q6. How frequently do you evaluate a video?
                     </div>
-                    <asp:RadioButtonList ID="rbFrequencyEvaluation" runat="server" RepeatDirection="Horizontal">
+                    <asp:RadioButtonList ID="rbEvaluatingFrequency" runat="server" RepeatDirection="Horizontal">
                         <asp:ListItem Text="Always" Value="always" />
                         <asp:ListItem Text="Often" Value="often" />
                         <asp:ListItem Text="Usally" Value="usually" />
                         <asp:ListItem Text="Rarely" Value="rarely" />
                         <asp:ListItem Text="Never" Value="never" />
                     </asp:RadioButtonList>
+                    <asp:RequiredFieldValidator id="rfvEvaluatingFrequency" runat="server" ControlToValidate="rbEvaluatingFrequency" ErrorMessage="Answer is required" ForeColor="Red" />
                 </div>
                 <div id="q7" class="question" runat="server">
                     <div class="q-question">
                         Q7. How frequently do you write comments?
                     </div>
-                     <asp:RadioButtonList ID="rbFrequencyComment" runat="server" RepeatDirection="Horizontal">
+                     <asp:RadioButtonList ID="rbCommentingFrequency" runat="server" RepeatDirection="Horizontal">
                         <asp:ListItem Text="Always" Value="always" />
                         <asp:ListItem Text="Often" Value="often" />
                         <asp:ListItem Text="Usally" Value="usually" />
                         <asp:ListItem Text="Rarely" Value="rarely" />
                         <asp:ListItem Text="Never" Value="never" />
                     </asp:RadioButtonList>
+                    <asp:RequiredFieldValidator id="rfvCommentingFrequency" runat="server" ControlToValidate="rbCommentingFrequency" ErrorMessage="Answer is required" ForeColor="Red" />
                 </div>
                 <button id="btnNext2" runat="server" onserverclick="nextButton2_click">Next</button>
             </div>
 
             <%-- About uploading video --%>
-            <div id="aboutUploadingVideo" runat="server">Uploading Video
+            <div id="aboutUploadingVideo" runat="server"><h3>Uploading Video</h3>
                 <div id="q8" class="question" runat="server">
 
                     <div class="q-question">
@@ -139,12 +144,13 @@
                         Q9. What purpose did you upload the videos for?
                     </div>
                     <input type="text" id="txtUnploadingPurpose" runat="server" />
+                    <asp:RequiredFieldValidator id="rfvUploadingPurpose" runat="server" ControlToValidate="txtUnploadingPurpose" ErrorMessage="Answer is required" ForeColor="Red" />
                 </div>
                 <div id="q10" class="question" runat="server">
                     <div class="q-question">
                         Q10. What genres do you usually post?
                     </div>
-                    <asp:CheckBoxList ID="cklUploadingGenres" runat="server" RepeatDirection="Horizontal">
+                    <asp:CheckBoxList class="margin-right-20px"  ID="cklUploadingGenres" runat="server" RepeatDirection="Horizontal">
                         <asp:ListItem Value="Movie">Movie</asp:ListItem>
                         <asp:ListItem Value="Drama">Drama</asp:ListItem>
                         <asp:ListItem Value="Comedy">Comedy</asp:ListItem>
@@ -180,29 +186,40 @@
                     <div class="q-question">
                         Q13. How many subscribers do you have on average?
                     </div>
-                    <input type="number" id="numSubscribers" runat="server" />
+                    <input type="number" id="numSubscribers" runat="server" min="0" onchange="" />
+                    <asp:RequiredFieldValidator id="rfvNumSubscribers" runat="server" ControlToValidate="numSubscribers" ErrorMessage="Please put the number of subscribers" ForeColor="Red" />
+                    <br />
                 </div>
                 <button id="btnNext3" runat="server" onserverclick="nextButton3_click">Next</button>
             </div>
             <%-- information of user --%>
             <div id="aboutUserInformation" runat="server">
-                <div class="q-question">
-                    What is your E-mail?
+                <h3>User information and opinions</h3>
+                <div id="qUserEmail" class="question">
+                    <div class="q-question">
+                        What is your E-mail?
+                    </div>
+                    <input type="email" id="inputEmail" runat="server" />
+                    <asp:RequiredFieldValidator id="rfvUserEmail" runat="server" ControlToValidate="inputEmail" ErrorMessage="Please put the your E-mail address." ForeColor="Red" />
                 </div>
-                <input type="email" id="email" runat="server" />
-
-                <div class="q-question">
-                    Please write any opinion about YouTube.
+                
+                <div id="qOpnionAboutYouTube" class="question">
+                    <div class="q-question">
+                        Please write any opinion about YouTube.
+                    </div>
+                    <textarea id="txtYouTubeOpinion" class="textarea-opinion" runat="server" placeholder="Plase put your opinion"></textarea>
                 </div>
-                <textarea id="txtYouTubeOpinion" name="txtMessage" rows="5" runat="server" placeholder="Plase put your opinion"></textarea>
-                <div class="q-question">
-                    Please write your opinion about this survey.
+                <div id="qOpinionAboutSurvey" class="question">
+                    <div class="q-question">
+                        Please write your opinion about this survey.
+                    </div>
+                    <textarea id="txtSurveyOpinion" class="textarea-opinion" runat="server" placeholder="Plase put your opinion"></textarea>
                 </div>
-                <textarea id="txtSurveyOpinion" name="txtMessage" rows="5" runat="server" placeholder="Plase put your opinion"></textarea>
-                <p>
-                    <button id="btnFinish" runat="server" onserverclick="submitButton_click">Submit</button>
-                </p>                
+                <p>                    
+                    <asp:Button runat="server" Text="submit" ID="submitButton" OnClick="submitButton_click" />
+                </p>           
             </div>
+            <asp:Label ID="lbMessage" runat="server"></asp:Label>
         </div>
     </div>
 </asp:Content>
